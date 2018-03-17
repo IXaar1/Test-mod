@@ -3,6 +3,7 @@ package ru.xuttctep.tutorialmod.proxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import ru.xuttctep.tutorialmod.item.ModItems;
 
 public class ClientProxy extends CommonProxy {
 
@@ -14,6 +15,8 @@ public class ClientProxy extends CommonProxy {
 
     @Override
     public void init(FMLInitializationEvent event) {
+
+        ModItems.registerRenders();
 
     }
 

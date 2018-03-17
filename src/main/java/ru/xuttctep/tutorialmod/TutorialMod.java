@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import ru.xuttctep.tutorialmod.item.ModItems;
 import ru.xuttctep.tutorialmod.proxy.CommonProxy;
 import ru.xuttctep.tutorialmod.tab.CreativeTabTutorial;
 
@@ -30,8 +31,7 @@ public class TutorialMod
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
         tabTutorial = new CreativeTabTutorial(CreativeTabs.getNextID(), "tab_tutorial");
-
-
+        ModItems.preInit();
         proxy.preInit(event);
 
     }
