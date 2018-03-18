@@ -29,7 +29,9 @@ public class ItemTutorialItem extends Item {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer player, EnumHand hand) {
-        player.addChatComponentMessage(new TextComponentString("TIplur лох"));
+        if(!worldIn.isRemote){
+            player.addChatComponentMessage(new TextComponentString("TIplur лох"));
+        }
         return super.onItemRightClick(itemStackIn, worldIn, player, hand);
     }
 
