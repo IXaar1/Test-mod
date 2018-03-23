@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures":{
-    "layer0":"tutorialmod:items/tutorial_item"
+    "layer0":"tutorialmod:items/six_item"
   }
 }

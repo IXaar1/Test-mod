@@ -12,9 +12,9 @@ import ru.xuttctep.tutorialmod.TutorialMod;
 
 import java.util.List;
 
-public class ItemTutorialSword extends ItemSword {
+public class ItemSwords extends ItemSword {
 
-    public ItemTutorialSword(ToolMaterial material, String name) {
+    public ItemSwords(ToolMaterial material, String name) {
 
         super(material);
         setUnlocalizedName(name);

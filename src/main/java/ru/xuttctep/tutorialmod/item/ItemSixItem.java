@@ -17,9 +17,9 @@ import ru.xuttctep.tutorialmod.TutorialMod;
 
 import java.util.List;
 
-public class ItemTutorialItem extends Item {
+public class ItemSixItem extends Item {
 
-    public ItemTutorialItem(String name) {
+    public ItemSixItem(String name) {
 
         setUnlocalizedName(name);
         setCreativeTab(TutorialMod.tabTutorial);
